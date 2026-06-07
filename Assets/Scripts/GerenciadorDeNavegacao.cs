@@ -40,17 +40,25 @@ public class GerenciadorDeNavegacao : MonoBehaviour
     [Header("Texto Informativo")]
     public TMP_Text textoInformativo;
 
-    [TextArea(2, 5)]
-    public string textoPontoInicial = "Bem-vindo. Escolha um ponto para iniciar a visita.";
+    [TextArea(4, 8)]
+    public string textoPontoInicial =
+        "<b>Bem-vindo ao Trapiche Histórico!</b>\n" +
+        "Você está prestes a embarcar em uma jornada através do tempo. Este antigo porto já foi o coração pulsante do comércio local. Explore o cenário e utilize as Alavancas Temporais para alternar entre as glórias do passado e as marcas do presente. O tempo está em suas mãos!";
 
-    [TextArea(2, 5)]
-    public string textoArmazem = "Este ponto apresenta o armazém e sua relação com a dinâmica histórica do espaço.";
+    [TextArea(4, 8)]
+    public string textoArmazem =
+        "<b>O Armazém Central</b>\n" +
+        "Construído à beira-mar, este armazém era o ponto de parada obrigatório para navios de carga. Aqui eram estocadas mercadorias preciosas como café, especiarias, tecidos e ferramentas antes de seguirem viagem. No passado, o barulho das carroças e caixotes não parava nunca!";
 
-    [TextArea(2, 5)]
-    public string textoChamines = "Este ponto destaca as chaminés, elementos marcantes da paisagem industrial do conjunto.";
+    [TextArea(4, 8)]
+    public string textoChamines =
+        "<b>As Grandes Chaminés</b>\n" +
+        "Testemunhas da era industrial do complexo. Estas chaminés faziam parte das antigas caldeiras e máquinas a vapor que processavam produtos e geravam energia para o Trapiche no século passado. Olhando para cima, você quase consegue ver a fumaça do progresso cortando o céu.";
 
-    [TextArea(2, 5)]
-    public string textoDonaTete = "Este ponto apresenta o Armazém Dona Teté e sua importância para a memória do local.";
+    [TextArea(4, 8)]
+    public string textoDonaTete =
+        "<b>Armazém Dona Teté</b>\n" +
+        "Mais do que um comércio, o armazém de Dona Teté era o ponto de encontro da comunidade. Entre sacos de grãos e produtos coloniais, os marinheiros e moradores se reuniam aqui para tomar um café e conversar. Dona Teté era famosa por sua hospitalidade e por saber todos os segredos do Trapiche.";
 
     [Header("Configuração")]
     public bool iniciarNoPontoInicial = true;

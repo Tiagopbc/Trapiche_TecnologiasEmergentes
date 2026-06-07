@@ -12582,10 +12582,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bem-vindo. Escolha um ponto para iniciar a visita.
+  m_text: "<b>Bem-vindo ao Trapiche Hist\xF3rico!</b>\n\nVoc\xEA est\xE1 prestes
+    a embarcar em uma jornada atrav\xE9s do tempo. Este antigo porto j\xE1 foi o
+    cora\xE7\xE3o pulsante do com\xE9rcio local. Explore o cen\xE1rio e utilize as
+    Alavancas Temporais para alternar entre as gl\xF3rias do passado e as marcas
+    do presente. O tempo est\xE1 em suas m\xE3os!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12609,8 +12613,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12648,7 +12652,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -19.912674, y: -3.4998026, z: -18.329775, w: -0.7495837}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -12682,7 +12686,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12722,7 +12726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.68}
+  m_AnchoredPosition: {x: -0.037, y: 0.666}
   m_SizeDelta: {x: 45, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1499677193
@@ -17070,13 +17074,26 @@ MonoBehaviour:
   botaoChamines: {fileID: 411860031}
   botaoDonaTete: {fileID: 1106191240}
   textoInformativo: {fileID: 1479871768}
-  textoPontoInicial: Bem-vindo. Escolha um ponto para iniciar a visita.
-  textoArmazem: "Este ponto apresenta o armaz\xE9m e sua rela\xE7\xE3o com a din\xE2mica
-    hist\xF3rica do espa\xE7o."
-  textoChamines: "Este ponto destaca as chamin\xE9s, elementos marcantes da paisagem
-    industrial do conjunto."
-  textoDonaTete: "Este ponto apresenta o Armaz\xE9m Dona Tet\xE9 e sua import\xE2ncia
-    para a mem\xF3ria do local."
+  textoPontoInicial: "<b>Bem-vindo ao Trapiche Hist\xF3rico!</b>\nVoc\xEA est\xE1
+    prestes a embarcar em uma jornada atrav\xE9s do tempo. Este antigo porto j\xE1
+    foi o cora\xE7\xE3o pulsante do com\xE9rcio local. Explore o cen\xE1rio e utilize
+    as Alavancas Temporais para alternar entre as gl\xF3rias do passado e as marcas
+    do presente. O tempo est\xE1 em suas m\xE3os!"
+  textoArmazem: "<b>O Armaz\xE9m Central</b>\nConstru\xEDdo \xE0 beira-mar, este
+    armaz\xE9m era o ponto de parada obrigat\xF3rio para navios de carga. Aqui eram
+    estocadas mercadorias preciosas como caf\xE9, especiarias, tecidos e ferramentas
+    antes de seguirem viagem. No passado, o barulho das carro\xE7as e caixotes n\xE3o
+    parava nunca!"
+  textoChamines: "<b>As Grandes Chamin\xE9s</b>\nTestemunhas da era industrial do
+    complexo. Estas chamin\xE9s faziam parte das antigas caldeiras e m\xE1quinas
+    a vapor que processavam produtos e geravam energia para o Trapiche no s\xE9culo
+    passado. Olhando para cima, voc\xEA quase consegue ver a fuma\xE7a do progresso
+    cortando o c\xE9u."
+  textoDonaTete: "<b>Armaz\xE9m Dona Tet\xE9</b>\nMais do que um com\xE9rcio, o armaz\xE9m
+    de Dona Tet\xE9 era o ponto de encontro da comunidade. Entre sacos de gr\xE3os
+    e produtos coloniais, os marinheiros e moradores se reuniam aqui para tomar um
+    caf\xE9 e conversar. Dona Tet\xE9 era famosa por sua hospitalidade e por saber
+    todos os segredos do Trapiche."
   iniciarNoPontoInicial: 1
   ajustarRotacaoNoVR: 1
   alturaCameraPC: 2
