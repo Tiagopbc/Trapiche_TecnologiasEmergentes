@@ -27,7 +27,9 @@ public class GerenciadorDoTempo : MonoBehaviour
     [Range(0f, 1f)]
     public float intensidadeMaximaMascara = 0.9f;
 
-    private VisaoDoTempo visaoAtual;
+    [Header("Estado Atual")]
+    public VisaoDoTempo visaoAtual;
+
     private bool estaTransicionando = false;
 
     private void Start()
@@ -54,6 +56,18 @@ public class GerenciadorDoTempo : MonoBehaviour
     public void MostrarPresente()
     {
         MostrarVisaoContemporanea();
+    }
+
+    public void AlternarVisaoTemporal()
+    {
+        if (visaoAtual == VisaoDoTempo.Historica)
+        {
+            MostrarVisaoContemporanea();
+        }
+        else
+        {
+            MostrarVisaoHistorica();
+        }
     }
 
     private void IniciarTransicao(VisaoDoTempo novaVisao)
@@ -90,10 +104,9 @@ public class GerenciadorDoTempo : MonoBehaviour
             yield return AbrirMascara();
         }
 
-        visaoAtual = novaVisao;
         estaTransicionando = false;
 
-        Debug.Log("Visão atual: " + visaoAtual);
+        Debug.Log("Visão temporal atual: " + visaoAtual);
     }
 
     private IEnumerator FecharMascara()

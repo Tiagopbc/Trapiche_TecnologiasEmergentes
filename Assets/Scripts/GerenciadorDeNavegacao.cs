@@ -37,28 +37,73 @@ public class GerenciadorDeNavegacao : MonoBehaviour
     public BotaoDeNavegacao botaoChamines;
     public BotaoDeNavegacao botaoDonaTete;
 
-    [Header("Texto Informativo")]
-    public TMP_Text textoInformativo;
+    [Header("Placas Informativas")]
+    public GameObject placaInformativa01;
+    public GameObject placaInformativa02;
+    public GameObject placaInformativa03;
+
+    public TMP_Text textoPlacaInformativa01;
+    public TMP_Text textoPlacaInformativa02;
+    public TMP_Text textoPlacaInformativa03;
+
+    [Header("Textos do Ponto Inicial")]
+    [TextArea(4, 8)]
+    public string pontoInicialTexto01 =
+        "<b>O Complexo Trapiche</b>\n" +
+        "Você está no ponto de partida de uma experiência de visitação pelo Complexo Trapiche. Este espaço representa uma antiga área ligada à circulação de pessoas, mercadorias e memórias. Ao longo do percurso, observe como o tempo transforma a paisagem, os usos e os significados de um lugar.";
 
     [TextArea(4, 8)]
-    public string textoPontoInicial =
-        "<b>Bem-vindo ao Trapiche Histórico!</b>\n" +
-        "Você está prestes a embarcar em uma jornada através do tempo. Este antigo porto já foi o coração pulsante do comércio local. Explore o cenário e utilize as Alavancas Temporais para alternar entre as glórias do passado e as marcas do presente. O tempo está em suas mãos!";
+    public string pontoInicialTexto02 =
+        "<b>O Trapiche no passado</b>\n" +
+        "No passado, áreas como esta tinham papel estratégico para o comércio e para o abastecimento local. Armazéns, embarcações, trabalhadores e mercadorias compunham uma paisagem movimentada. O Trapiche era um ponto de encontro entre o mar, a cidade e a economia de sua época.";
 
     [TextArea(4, 8)]
-    public string textoArmazem =
+    public string pontoInicialTexto03 =
+        "<b>O Trapiche hoje</b>\n" +
+        "Hoje, o Complexo Trapiche pode ser compreendido como espaço de memória, preservação e ressignificação. Mesmo quando suas funções originais mudam, seus elementos arquitetônicos continuam contando histórias sobre trabalho, comércio, tecnologia e vida urbana.";
+
+    [Header("Textos do Armazém")]
+    [TextArea(4, 8)]
+    public string armazemTexto01 =
         "<b>O Armazém Central</b>\n" +
-        "Construído à beira-mar, este armazém era o ponto de parada obrigatório para navios de carga. Aqui eram estocadas mercadorias preciosas como café, especiarias, tecidos e ferramentas antes de seguirem viagem. No passado, o barulho das carroças e caixotes não parava nunca!";
+        "O armazém era uma das estruturas mais importantes do complexo. Ele servia como local de guarda, organização e circulação de produtos. Sua posição no conjunto revela a importância da logística e do controle das mercadorias que chegavam, permaneciam temporariamente e depois seguiam para outros destinos.";
 
     [TextArea(4, 8)]
-    public string textoChamines =
+    public string armazemTexto02 =
+        "<b>O armazém no passado</b>\n" +
+        "Na visão histórica, o armazém representa o período em que o Trapiche funcionava como espaço de intensa movimentação. Caixotes, sacos, ferramentas, tecidos e outros produtos passavam por esse tipo de construção. O ambiente era marcado pelo trabalho manual e pelo fluxo constante de pessoas.";
+
+    [TextArea(4, 8)]
+    public string armazemTexto03 =
+        "<b>O armazém hoje</b>\n" +
+        "Na visão contemporânea, o armazém deixa de ser apenas um espaço de armazenamento e passa a ser visto como patrimônio. Suas paredes, formas e marcas materiais ajudam a compreender como a cidade se transformou. Mesmo sem a função original, ele continua sendo referência para a memória do lugar.";
+
+    [Header("Textos das Chaminés")]
+    [TextArea(4, 8)]
+    public string chaminesTexto01 =
         "<b>As Grandes Chaminés</b>\n" +
-        "Testemunhas da era industrial do complexo. Estas chaminés faziam parte das antigas caldeiras e máquinas a vapor que processavam produtos e geravam energia para o Trapiche no século passado. Olhando para cima, você quase consegue ver a fumaça do progresso cortando o céu.";
+        "As chaminés são marcas visuais da presença de atividades produtivas no complexo. Elas remetem a um tempo em que máquinas, caldeiras e sistemas movidos a vapor faziam parte da paisagem do trabalho. Sua altura não era apenas funcional: também indicava poder técnico e transformação industrial.";
 
     [TextArea(4, 8)]
-    public string textoDonaTete =
+    public string chaminesTexto02 =
+        "<b>Marcos na paisagem</b>\n" +
+        "Mesmo quando deixam de cumprir sua função original, as chaminés permanecem como sinais fortes na paisagem. Elas ajudam o visitante a reconhecer o passado industrial do lugar e funcionam como monumentos silenciosos. Olhar para elas é perceber como a arquitetura guarda vestígios do trabalho e da tecnologia.";
+
+    [Header("Textos do Armazém Dona Teté")]
+    [TextArea(4, 8)]
+    public string donaTeteTexto01 =
         "<b>Armazém Dona Teté</b>\n" +
-        "Mais do que um comércio, o armazém de Dona Teté era o ponto de encontro da comunidade. Entre sacos de grãos e produtos coloniais, os marinheiros e moradores se reuniam aqui para tomar um café e conversar. Dona Teté era famosa por sua hospitalidade e por saber todos os segredos do Trapiche.";
+        "O Armazém Dona Teté representa uma dimensão mais cotidiana e comunitária do complexo. Além da função comercial, esse tipo de espaço podia servir como ponto de encontro, conversa e convivência. Ele aproxima a história do Trapiche da vida das pessoas que circularam por esse lugar.";
+
+    [TextArea(4, 8)]
+    public string donaTeteTexto02 =
+        "<b>Dona Teté no passado</b>\n" +
+        "Na visão histórica, o armazém é imaginado como um espaço vivo, frequentado por trabalhadores, moradores e visitantes. Entre mercadorias, balcões e conversas, o lugar reunia práticas comerciais e relações sociais. Dona Teté simboliza essa memória afetiva ligada à hospitalidade e ao comércio local.";
+
+    [TextArea(4, 8)]
+    public string donaTeteTexto03 =
+        "<b>Dona Teté hoje</b>\n" +
+        "Na visão contemporânea, o Armazém Dona Teté pode ser lido como um lugar de memória. Mesmo transformado pelo tempo, ele preserva sentidos ligados à comunidade, ao pertencimento e à identidade local. Sua presença mostra que o patrimônio também está nas pessoas e nas lembranças.";
 
     [Header("Configuração")]
     public bool iniciarNoPontoInicial = true;
@@ -277,7 +322,7 @@ public class GerenciadorDeNavegacao : MonoBehaviour
         ConfigurarBotao(botaoChamines, LocalDeNavegacao.Chamines, "CHAMINÉS");
         ConfigurarBotao(botaoDonaTete, LocalDeNavegacao.DonaTete, "DONA TETÉ");
 
-        AtualizarTextoInformativo();
+        AtualizarPlacasInformativas();
     }
 
     private void ConfigurarBotao(BotaoDeNavegacao botao, LocalDeNavegacao localDoBotao, string textoOriginal)
@@ -299,34 +344,100 @@ public class GerenciadorDeNavegacao : MonoBehaviour
         }
     }
 
-    private void AtualizarTextoInformativo()
+    private void AtualizarPlacasInformativas()
     {
-        if (textoInformativo == null)
-        {
-            return;
-        }
-
         if (localAtual == LocalDeNavegacao.PontoInicial)
         {
-            textoInformativo.text = textoPontoInicial;
+            DefinirTextosDasPlacas(
+                pontoInicialTexto01,
+                pontoInicialTexto02,
+                pontoInicialTexto03,
+                true,
+                true,
+                true
+            );
+
             return;
         }
 
         if (localAtual == LocalDeNavegacao.Armazem)
         {
-            textoInformativo.text = textoArmazem;
+            DefinirTextosDasPlacas(
+                armazemTexto01,
+                armazemTexto02,
+                armazemTexto03,
+                true,
+                true,
+                true
+            );
+
             return;
         }
 
         if (localAtual == LocalDeNavegacao.Chamines)
         {
-            textoInformativo.text = textoChamines;
+            DefinirTextosDasPlacas(
+                chaminesTexto01,
+                chaminesTexto02,
+                string.Empty,
+                true,
+                true,
+                false
+            );
+
             return;
         }
 
         if (localAtual == LocalDeNavegacao.DonaTete)
         {
-            textoInformativo.text = textoDonaTete;
+            DefinirTextosDasPlacas(
+                donaTeteTexto01,
+                donaTeteTexto02,
+                donaTeteTexto03,
+                true,
+                true,
+                true
+            );
+        }
+    }
+
+    private void DefinirTextosDasPlacas(
+        string texto01,
+        string texto02,
+        string texto03,
+        bool exibirPlaca01,
+        bool exibirPlaca02,
+        bool exibirPlaca03
+    )
+    {
+        if (placaInformativa01 != null)
+        {
+            placaInformativa01.SetActive(exibirPlaca01);
+        }
+
+        if (placaInformativa02 != null)
+        {
+            placaInformativa02.SetActive(exibirPlaca02);
+        }
+
+        if (placaInformativa03 != null)
+        {
+            placaInformativa03.SetActive(exibirPlaca03);
+        }
+
+        if (textoPlacaInformativa01 != null)
+        {
+            textoPlacaInformativa01.text = texto01;
+        }
+
+        if (textoPlacaInformativa02 != null)
+        {
+            textoPlacaInformativa02.text = texto02;
+        }
+
+        if (textoPlacaInformativa03 != null)
+        {
+            textoPlacaInformativa03.text = texto03;
         }
     }
 
